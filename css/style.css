@@ -582,8 +582,3 @@ img {
 html,body{
   overflow-x: hidden
 }
-
-#gameFrame{
-  width:640px;
-  height:360px;
-}

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta property='og:type' content='website'>
   <meta property='og:title' content='清原光平 ポートフォリオ'>
-  <meta property='og:url' content='URLが入る'>
+  <meta property='og:url' content='https://kiyok7227.github.io/portfolio/'>
   <meta property='og:description' content='清原光平のポートフォリオサイトです。'>
   <meta property="og:image" content="img/ogp.png">
   <meta name="description" content="清原光平のポートフォリオサイトです" />
@@ -17,7 +17,7 @@
   <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="img/favicon.ico" />
-  <link rel=”canonical” href=”URLが入る” />
+  <link rel="canonical" href="https://kiyok7227.github.io/portfolio/" />
 </head>
 
 <body>
@@ -33,6 +33,7 @@
           <ul class="gnav-list">
             <li class="gnav-item"><a href="#skill">SKILL</a></li>
             <li class="gnav-item"><a href="#works">WORKS</a></li>
+            <li class="gnav-item"><a href="#privateworks">PRIVATE WORKS</a></li>
             <li class="gnav-item"><a href="#about">ABOUT</a></li>
             <li class="gnav-item"><a href="#contact">CONTACT</a></li>
           </ul>
@@ -216,6 +217,51 @@
                 クライアントの意見を汲み取りながらPowerPointで絵コンテを作成し、すり合わせを行っていました。<br><br>
                 ■AfterEffectsを駆使した演出<br>
                 見ていて飽きずインパクトのある動画を制作するため、AfterEffectsで様々なエフェクト効果を取り入れていました。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /works -->
+
+      <!-- works -->
+      <section class="works section" id="privateworks">
+        <div class="container">
+          <h2 class="title">PRIVATE WORKS</h2>
+          <div class="works-list">
+            <!-- 真の仲間 -->
+            <div class="works-item">
+              <a class="works-img" href="https://unityroom.com/games/imouto_mitsugame" target="_blank"><img
+                  src="img/works-5-thumb.png" alt="" /></a>
+              <p class="works-name">Unity 3D脱出ゲーム</p>
+              <p class="works-info">Unityを使用した一人称視点の3D脱出ゲームを個人制作しました。</p>
+              <p class="works-name">【期間】</p>
+              <p class="works-info">2020/5</p>
+              <p class="works-name">【環境・言語】</p>
+              <p class="works-info">C#、Unity、DOTween、GUI、Arbor3</p>
+              <p class="works-name">【ポイント】</p>
+              <p class="works-info">■短期間制作<br>
+                こちらのゲームはUnity1Weekという１週間でお題に沿ってゲームを作ることを題材にしたイベントに参加するため制作しました。<br>
+                １週間という限られた時間の中で、コンセプトを決め、素材を用意し実装しながらデバッグを行うという非常にいい経験になりました。<br><br>
+                ■成果と課題点<br>
+                GUI操作への理解、Post Processing、ビジュアルスクリプティングといった新たな分野へ挑戦できたことは大きな成果でした。<br>
+                しかし、今作は動作軽量化が甘く、3Dゲームの最適化について深く知る必要があると感じたことが課題点となりました。</p>
+            </div>
+            <!-- 天国大魔境 -->
+            <div class="works-item">
+              <iframe id="gameFrame" allowfullscreen width="644" height="364"
+                src="https://kiyok7227.github.io/plancktest/" sandbox="allow-same-origin allow-scripts"></iframe>
+              <p class="works-name">Planck.jsによる物理演算</p>
+              <p class="works-info">枠内をクリックでオブジェクトが跳ねます。</p>
+              <p class="works-name">【期間】</p>
+              <p class="works-info">2022/4</p>
+              <p class="works-name">【環境・言語】</p>
+              <p class="works-info">Javascript、Planck.js、node.js、Pixi.js</p>
+              <p class="works-name">【ポイント】</p>
+              <p class="works-info">■軽量な2D物理演算<br>
+                Planck.jsという、元はbox2Dという2D物理演算のオープンソースライブラリを使用して実験を行いました。<br>
+                同じくオープンソースのMatter.jsも同様に実験しましたが、Matter.jsにはCCDと呼ばれる連続衝突判定機能が搭載されておらず、壁抜けなどが発生しにくいPlanck.jsの方が実用的であるという結果がわかりました。<br><br>
+                ■使いどころ<br>
+                オブジェクトに演算情報を持たせるという仕組みなので、ゲームにもWEBデザインにも応用が効きます。</p>
             </div>
           </div>
         </div>

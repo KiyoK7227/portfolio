@@ -50,7 +50,7 @@
           <p class="mv-title">KIYOHARA KOUHEI</p>
           <p class="mv-subtitle">PORTFOLIO</p>
           <p class="mv-text">
-            清原 光平 1993年7月2日生 29歳<br><br>
+            清原 光平 1993年7月2日生 31歳<br><br>
             2018年2月頃から現在に至るまでの業務実績から、いくつかを抜粋したポートフォリオになります。<br>
             ​主にゲーム開発・動画編集の業務委託を行ってきました。<br>
           </p>
@@ -76,7 +76,7 @@
               <div class="skill-body">
                 <h3 class="skill-name">C#</h3>
                 <p class="skill-text">
-                  Unityを使用。UniTask、DoTween、LitMotion、uPoolsなどのライブラリを用いた設計</p>
+                  Unityを使用。UniTask、DoTween、LitMotion、uPoolsなどのライブラリを用いた設計や、自作ライブラリの作成</p>
               </div>
             </div>
             <div class="skill-item">
@@ -137,6 +137,26 @@
         <div class="container">
           <h2 class="title">WORKS</h2>
           <div class="works-list">
+            <!-- 講談社 -->
+            <div class="works-item">
+              <img src="img/works-8-thumb.png" alt="" />
+              <p class="works-name">Unity用ゲーム開発支援ライブラリ</p>
+              <p class="works-info">Unityでゲーム開発を行うための、開発支援ライブラリの制作を行いました。</p>
+              <p class="works-name">【案件先・期間】</p>
+              <p class="works-info">講談社クリエイターズラボ　2024/7～2024/9（2カ月）</p>
+              <p class="works-name">【役職・役割】</p>
+              <p class="works-info">プログラマー</p>
+              <p class="works-name">【環境・言語】</p>
+              <p class="works-info">C#、自作ライブラリ</p>
+              <p class="works-name">【ポイント】</p>
+              <p class="works-info">■イベントコマンドシステム<br>
+                Unityを使用する際に直面する大きな課題は、その「使い勝手の悪さ」です。ゲーム中の簡単なワンシーンを作成する場合でも、
+                Unityでは大量のC#コードを記述するか、ビジュアルスクリプティングで複雑な遷移表を作成する必要があります。
+                そこで、講談社様にイベントコマンド型スクリプティングシステムを提案しました。
+                これにより、『RPGツクール』のように、初心者でも効率的にUnityでゲーム開発が行えるライブラリを作成しました。<br><br>
+                ■ユーザー目線に立ったライブラリ開発<br>
+                納品したライブラリを使用するユーザーの立場に立ち、いかにシンプルで効率的に開発を進められるかを重視して、ライブラリの開発を行いました。</p>
+            </div>
             <!-- 真の仲間 -->
             <div class="works-item">
               <a class="works-img" href="https://store.steampowered.com/app/1581800/Slow_living_with_Princess/"
@@ -144,7 +164,7 @@
               <p class="works-name">ライトノベル原作 アニメ化宣伝用ゲーム開発</p>
               <p class="works-info">アニメ「真の仲間じゃないと勇者のパーティーを追い出されたので、辺境でスローライフすることにしました」の宣伝用PCゲーム開発プロジェクトです。</p>
               <p class="works-name">【案件先・期間】</p>
-              <p class="works-info">KADOKAWA　2020/6～2022/7（25カ月）</p>
+              <p class="works-info">KADOKAWA<br>アーリーアクセス版 2020/6～2022/7（25カ月）<br>完成版 2022/7～2023/10（15カ月）</p>
               <p class="works-name">【役職・役割】</p>
               <p class="works-info">プロジェクトリーダー / メインプログラマー</p>
               <p class="works-name">【環境・言語】</p>
@@ -153,14 +173,17 @@
               <p class="works-info">JSON、Excel</p>
               <p class="works-name">【ポイント】</p>
               <p class="works-info">■プロジェクトリーダー<br>
-                初のプロジェクトリーダーという役職では、企画立ち上げ、開発スケジュールの管理、メンバーへの作業指示、必要素材の発注などプロジェクト全体を管理していくという経験を積むことができました。<br>
-                プロジェクトを滞らせることなく、円滑に進行することができました。<br><br>
+                初めてのプロジェクトリーダーとして、企画の立ち上げから開発スケジュールの管理、メンバーへのタスク指示、必要素材の調達まで、プロジェクト全体を通じた包括的な管理を担当しました。
+                プロジェクトを滞らせることなく、スムーズな進行を実現し、チーム全体の生産性向上に貢献しました。<br><br>
                 ■多国言語対応を行い、オプションから言語切り替えを実装<br>
-                ExcelデータをJSONに変換し読み込み、言語に合わせて表示を切り替えられるよう設計・実装を行いました。<br><br>
+                ExcelデータをJSON形式に変換し、ユーザーがオプションメニューから言語を選択できるように設計・実装しました。
+                この機能はユーザーの利便性を向上させ、国際的なプレイヤー層を広げる役割を果たしました。<br><br>
                 ■SteamAPIを導入し、Steam実績を実装<br>
-                Node.jsとの相性が悪く、通知表示が正しく機能しないなどの問題が発生しましたが、APIのソースコードを読み迂回策を模索し、解決に導くことができました。<br><br>
+                開発中に、Node.jsとの互換性の問題により通知表示が正常に機能しないトラブルに直面しましたが、APIのソースコードを分析し、
+                迂回策を考案して問題を解決しました。この経験を通じて、技術的な課題を迅速に解決する能力を高めました。<br><br>
                 ■JSONでのデータ管理<br>
-                言語別の文章や、アイテムをクラフトするための配合情報をJSONで管理し、必要に応じて読みこんで使用するという設計を行い、アップデートにも柔軟に対応できるような形で実装を行いました。</p>
+                ゲーム内のデータ管理について、言語ごとのテキストやクラフトシステムの配合情報をJSON形式で管理しました。柔軟で拡張性のある設計を行い、今後のアップデートにも対応可能なシステムを構築しました。
+                このアプローチにより、効率的なデータ管理が可能となり、プロジェクトの開発スピードと品質向上に寄与しました。</p>
             </div>
             <!-- 天国大魔境 -->
             <div class="works-item">
@@ -177,8 +200,8 @@
               <p class="works-info">JSON</p>
               <p class="works-name">【ポイント】</p>
               <p class="works-info">■三角関数を多用したシステム<br>
-                本ゲームはスマホ操作に対応したアクションゲームのため、操作部分の設計やアクション部分の設計で三角関数を多くの場面で用いました。<br>
-                実務で使用することで、sin、cos、tanの使い方を改めて復習することができました。</p>
+                スマートフォン対応のアクションゲームの設計において、操作部分やアクションの挙動に三角関数（sin、cos、tan）を多く活用しました。
+                これにより、実務で三角関数の使い方を改めて復習し、数学的知識を実際のシステム設計に応用するスキルを磨きました。</p>
             </div>
             <!-- 邪神ちゃん -->
             <div class="works-item">
@@ -204,7 +227,7 @@
             <div class="works-item">
               <a class="works-img" href="works-movie.html"><img src="img/works-4-thumb.jpg" alt="" /></a>
               <p class="works-name">プロモーション動画制作</p>
-              <p class="works-info">過去の業務実績をまとめました。画像をクリックで抜粋一覧の別ページに移動します。</p>
+              <p class="works-info">過去の業務実績をまとめました。画像をクリックで抜粋一覧の<a href="works-movie.html">別ページに移動</a>します。</p>
               <p class="works-name">【案件先・期間】</p>
               <p class="works-info">株式会社ドワンゴ　2018/2～2020/5<br>
                 KADOKAWA　2021/11</p>
@@ -266,30 +289,29 @@
             <!-- Unity -->
             <div class="works-item">
               <blockquote class="twitter-tweet" data-media-max-width="560">
-                <p lang="ja" dir="ltr"><a
-                    href="https://twitter.com/hashtag/Unity?src=hash&amp;ref_src=twsrc%5Etfw">#Unity</a> <a
-                    href="https://twitter.com/hashtag/%E3%82%B2%E3%83%BC%E3%83%A0%E5%88%B6%E4%BD%9C?src=hash&amp;ref_src=twsrc%5Etfw">#ゲーム制作</a>
-                  <a href="https://t.co/mRdAu1ZmcC">pic.twitter.com/mRdAu1ZmcC</a>
-                </p>&mdash; 絋兵 - Kohei
-                (@Kohei_gamedev) <a
-                  href="https://twitter.com/Kohei_gamedev/status/1790463206122746305?ref_src=twsrc%5Etfw">May 14,
+                <p lang="ja" dir="ltr">どっちに還す？ -
+                  天国か地獄か-<br>UniryRoomで公開しました！<br>究極の選択を迫られる、閻魔大王シミュレーターです！<br>他プレイヤーと自分の選択を比較してみよう！<br><br>【プレイはこちら】<a
+                    href="https://t.co/RpZ4I97H9G">https://t.co/RpZ4I97H9G</a> <a
+                    href="https://t.co/TEmXTInwyU">pic.twitter.com/TEmXTInwyU</a></p>&mdash; こうへい (@KoheiGameDev) <a
+                  href="https://twitter.com/KoheiGameDev/status/1825626815991525812?ref_src=twsrc%5Etfw">August 19,
                   2024</a>
               </blockquote>
               <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              <p class="works-name">Unity 制作中ゲーム</p>
-              <p class="works-info">Unityを使用したスローライフアドベンチャーゲームを制作中です。</p>
+              <p class="works-name">Unity 個人開発ゲーム 「どっちに還す？【天国か地獄か】」</p>
+              <p class="works-info">Unityを使用した診断シミュレーションゲームです。<br>
+              <a href="https://unityroom.com/games/heaven_or_hell" target="_blank">こちらからプレイ</a>して頂けます。</p>
               <p class="works-name">【期間】</p>
-              <p class="works-info">2024/3 ～</p>
+              <p class="works-info">2024/8</p>
               <p class="works-name">【環境・言語】</p>
-              <p class="works-info">C#、Unity、UniTask、LitMotion、uPools</p>
+              <p class="works-info">C#、Unity、UniTask、自作ライブラリ</p>
               <p class="works-name">【ポイント】</p>
-              <p class="works-info">■本格3Dゲームへの挑戦<br>
-                過去の案件ではすべて、RPGツクールを用いた2Dゲームを制作しておりましたが、<br>
-                パルワールドをプレイし衝撃を受けたことをきっかけに、自身も本格的な3Dゲーム制作に挑戦したいと考えました。<br><br>
+              <p class="works-info">■イベント「Unity1Week」への参加<br>
+                講談社様からの案件でUnityのライブラリ開発を行い、自身のゲームでも使用してみることでユーザー目線に立つことができると考え、先方から許可を頂いた上で自作ライブラリを用いて開発を行いました。<br><br>
+                ■オンライン要素の実装<br>
+                グーグルスプレッドシートとのAPI連携で、アンケート結果を受信・送信するオンライン要素の実装を行いました。<br><br>
                 ■成果と課題点<br>
-                UnityURP、ポストプロセス、UniTaskによる非同期処理といった新たな分野へ挑戦し、試行錯誤を繰り返しながらより良い設計をすることを心がけております。<br>
-                今作は、csvにテキストをまとめることで多国言語対応も並行して進めております。<br><br>
-                シェーダーの理解を深めることと、ゲーム全体の動作最適化が今後の課題点となっております。</p>
+                定期的に開催される、Unity1Weekという”一週間でゲームを完成させ、公開する”というイベントに参加し、評価の高かったゲームとして紹介していただくことができました。<br><br>
+                実際に自ら使用してみることでライブラリに足りない部分も見え、さらなる改善へと繋げることができました。</p>
             </div>
           </div>
         </div>
@@ -306,7 +328,7 @@
             </p>
             <div class="profile-body">
               <p>
-                清原 光平 1993年7月2日生 29歳<br><br>
+                清原 光平 1993年7月2日生 31歳<br><br>
                 プログラミングや動画制作を業務委託を通して独学で習得してきました。日々インプットとアウトプットを繰り返し、クライアントに満足していただけるものを納品することを信条に活動しております。<br>
                 ゲーム開発というシステムエンジニアとは異なった分野ではありますが、要件定義から開発、デバッグ、アップデートまで一貫した経験があり、管理・テストを行いつつ開発を行った経験があります。より作業を効率的にしていくことに関心があり、ライブラリなどの導入を積極的に行うことができます。
               </p>
